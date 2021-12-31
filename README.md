@@ -2,6 +2,8 @@
 
 This repo is a collection of code snippets that effectively demonstrate WHY some best practices are useful, not only in interviews.
 
+I also includes the naive implementation of some STL containers to help understanding.
+
 Below is the list of best practices with their sample codes
 
 - [shared_ptr.cpp](shared_ptr.cpp) : using `std::make_shared` over `new` 
@@ -11,3 +13,5 @@ Below is the list of best practices with their sample codes
   - This function will be defined in multiple translation units, don't worry about it. The linker needs to make sure all translation units **use a single instance** of the variable/function.
 - [virtual_destructor](virtual_destructor.cpp): resource leak due to non-virtual destructor in base class: derived class destructor not called
 - [alignment](alignment.cpp): how does `alignment` in a struct work and how does `pragma pack` work 
+- [template meta](template_meta.cpp): some snippets for meta programming
+- [hash map](hash_map.cpp): how to implement a hash map?
